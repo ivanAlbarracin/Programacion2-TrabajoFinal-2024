@@ -75,7 +75,7 @@ El proyecto sigue la estructura estándar de Django:
 
 Los estudiantes deberán completar:
 1. **Agregar información sobre las ciudades**: Moddificar el modelo de ciudades apra cargar información relevante para el turismo de la provincia
-2. **Árboles Binarios de Búsqueda**: Implementar la lógica para ordenar las ciudades mediante un árbol binario de búsqueda antes de mostrar los datos al frontend.
+2. **Árboles Binarios de Búsqueda**: Comentar todos los metodos del arbol binario de busqueda explicando apra que sirven y como funcionan.
 3. **Algoritmo de Dijkstra**: Implementar desde cero el algoritmo para encontrar la ruta más corta entre dos ciudades. La entrada serán las ciudades cargadas previamente, y la salida, la ruta óptima y la distancia.
 
 ### Notas Importantes
