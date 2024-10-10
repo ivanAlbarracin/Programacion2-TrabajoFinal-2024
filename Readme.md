@@ -99,6 +99,57 @@ Asegúrate de que todas las pruebas pasen antes de realizar una entrega.
 - Lean y comenten la clase ABB que esta en el archivo utils.py, estudien la implementacion completa que despues la van a tener que defender.
 - Para calcular las rutas van a tener que implementar la función def dijkstra(start_city) y def get_shortest_path(start_city, end_city) en el archivo utils.py
 
+## Cronograma:
+4 entregas y la defensa
+
+### Entrega 1: Resumen de proyecto
+Llenar formulario con:
++ Miembros del grupo
++ nombre del grupo
++ descripción del proyecto
++ funcionalidades
+
+### Entrega 2: Entrega preliminar:
++ poner una etiqueta al git v0.0.1
++ Documento contando que se tiene y que falta implementar (estado de situación del proyecto)
+- que anda
+- que no anda
+- que falta implementar
+
+### Entrega 3: Código fuente y documentación del proyecto
+- Codigo fuente
+- Comentarios en el código
+- Decisiones de diseño y analisis de complejidad
+
+### Entrega 4 : Video
+- Video de 10 minutos presentando el proyecto (link al video)
+* opcional entregar presentacion si usan durante el video
+
+### Defensa orales
+
+# Recomentaciones para la implementación:
+Entrega 1
+- Usar el programa Agenda entenderla y documentarla (ponerles comentarios que expliquen que hace)
+- Diseñar el programa de usteedes en base a los visto en la clase Agenda (clases y metodos necesarios)
+- Entregar el borrador de proyecto
+
+Entrega 2
+- Armar el esqueleto de las clases que necesitan
+- primero las clases mas sencillas del tipo de dato especifico y despues la de administracion (ej primero contacto y después agenda)
+- ir usando el archivo test para ir probando el funcionamiento, pueden hacer un archivo de test por clase tambien
+
+Entrega 3
+- agregar descripcion de cada clase y metodo
+- agregar los test de cada metodo
+- corregir lo que no este funcionando
+- modificar el menu para agregar nuevas funcionalidades
+
+Entrega 4:
+- armar una presentacion con una diapositiva por cada uno de los puntos mencionados
+- repartir aprtes
+- ensayar la presentacion y medir el tiempo
+- grabar la presentacion con un meet y grabando la pantalla, por ejemplo con obs o vokoscreen
+
 ## Criterios de Evaluación
 
 1. Claridad y comentarios en el código.
