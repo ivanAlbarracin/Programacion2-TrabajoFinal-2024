@@ -1,20 +1,16 @@
-Aquí tienes un borrador del archivo README para el proyecto:
-
----
-
 # Proyecto Final de Programación 2
 
 ## Objetivo
 Desarrollo de una plataforma de turismo nacional utilizando Django, aplicando conceptos aprendidos durante la materia como: 
+- Programación orientada a objetos
+- Estructuras de datos
 - Árboles binarios
 - Grafos
 - Complejidad de algoritmos
-- Estructuras de datos
-- Programación orientada a objetos
 
 ## Objetivos específicos
-- Implementación del algoritmo de Dijkstra para encontrar la ruta más corta entre dos ciudades.
 - Carga de datos de las ciudades con información turística relevante.
+- Implementación del algoritmo de Dijkstra para encontrar la ruta más corta entre dos ciudades.
 - Utilización de árboles binarios de búsqueda (BST) para ordenar la lista de ciudades antes de pasar los datos al frontend.
 
 ## Instrucciones de instalación
@@ -38,6 +34,7 @@ Desarrollo de una plataforma de turismo nacional utilizando Django, aplicando co
 
 4. Aplicar las migraciones:
     ```bash
+    cd gps_simulation
     python manage.py migrate
     ```
 
@@ -72,7 +69,7 @@ El proyecto sigue la estructura estándar de Django:
 ## Funcionalidades Implementadas
 
 - **Carga de ciudades**: Utilizando el administrador de Django, se puede ingresar información sobre las ciudades.
-- **Carga de runtas**: Se permite cargar rutas entre ciudades, que representan las distancias entre ellas.
+- **Carga de runtas**: Utilizando el administrador de Django, tambien se permite la carga a traves de la url /load para cargar cosas rapidos, se tiene que poner todas las rutas en el formato "id_ciudad1 id_ciudad2 distancia" si los id de ciudades no existen falla.
   
 ## Funcionalidades a Implementar
 
@@ -98,9 +95,9 @@ Asegúrate de que todas las pruebas pasen antes de realizar una entrega.
 
 ## Sugerencias para la Implementación
 
-- Para **las rutas** (distancias entre ciudades), se recomienda usar diccionarios donde las claves sean las ciudades y los valores sean listas con las ciudades vecinas y la distancia entre ellas.
-- Los estudiantes pueden usar listas de adyacencia o matrices de adyacencia según prefieran.
-- Se sugiere seguir buenas prácticas de programación con comentarios claros en el código y manejo adecuado de excepciones.
+- Para agrgar la informacion de las ciudades van a tener que modificar la clase City en el archivo models.py y luego hacer la migracion para que impacten los cambios en la base de datos. Luego van a tener que modificar el template city_detail.html para mostrar la información nueva.
+- Lean y comenten la clase ABB que esta en el archivo utils.py, estudien la implementacion completa que despues la van a tener que defender.
+- Para calcular las rutas van a tener que implementar la función def dijkstra(start_city) y def get_shortest_path(start_city, end_city) en el archivo utils.py
 
 ## Criterios de Evaluación
 
@@ -110,12 +107,7 @@ Asegúrate de que todas las pruebas pasen antes de realizar una entrega.
 4. Implementación de tests unitarios.
 5. Presentación oral del proyecto.
 6. Preguntas teóricas sobre lo implementado.
-7. **Punto extra**: Agregar funcionalidades adicionales más allá de lo requerido.
 
-
-## Anexo
-
-implementados ahora:
-/ # Página de home
-/shortest-route 
-/admin
+# Puntos extras
++ modificar la carga de rutas para que al agregar una ruta ciudad1->ciudad2 50km también agregue la ruta ciudad2->ciudad1 50km
++ modificar el pryecto apra que puedan cargarse una foto de la ciudad y mostrarla en la página de la ciudad (ver manejo de archivos estaticos publicos en django)
