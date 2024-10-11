@@ -23,7 +23,7 @@ Desarrollo de una plataforma de turismo nacional utilizando Django, aplicando co
 
 2. Crear y activar un entorno virtual:
     ```bash
-    python3 -m venv .venv
+    python3 -m venv .venv # En Windows: python -m venv .venv
     source .venv/bin/activate  # En Windows: .venv\Scripts\activate
     ```
 
