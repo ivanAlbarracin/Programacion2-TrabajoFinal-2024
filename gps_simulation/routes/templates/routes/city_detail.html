@@ -1,10 +1,21 @@
 {% extends 'routes/base.html' %}
+{% load static %}
+
 
 {% block title %}{{ ciudad.name }}{% endblock %}
 
 {% block content %}
+
+<link rel="stylesheet" href="{% static './style.css' %}">
+
     <div class="container mt-5">
         <h1>{{ ciudad.name }}</h1>
+        <!-- Mostrar la imagen de la ciudad -->
+        {% if ciudad.imagen %}
+            <img src="{{ciudad.imagen.url}}" alt="{{ ciudad.name }}" class="img-fluid" style="max-width: 100%; height: auto;">
+        {% else %}
+            <p>No hay imagen disponible para esta ciudad.</p>
+        {% endif %}
         
         <h3>Rutas desde {{ ciudad.name }}:</h3>
         <ul class="list-group mb-3">
