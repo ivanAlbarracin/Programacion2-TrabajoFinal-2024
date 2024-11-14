@@ -1,0 +1,45 @@
+/* static/styles-home.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("{% static'images/LaRutaDelVino.jpg'%}");
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    background-color: #6a95a8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+}
+
+ul.list-group {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list-group li {
+    margin: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.list-group li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul.list-group li a:hover {
+    text-decoration: underline;
+}
+
+ul.list-group li.no-ciudades {
+    background-color: #f8d7da;
+    color: #721c24;
+}

@@ -17,6 +17,7 @@
             <p>No hay imagen disponible para esta ciudad.</p>
         {% endif %}
         
+        <p> {{ ciudad.info_y_bodegas }} </p>
         <h3>Rutas desde {{ ciudad.name }}:</h3>
         <ul class="list-group mb-3">
             {% for ruta in rutas_salida %}
