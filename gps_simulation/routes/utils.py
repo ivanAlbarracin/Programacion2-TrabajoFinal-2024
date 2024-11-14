@@ -4,7 +4,22 @@ from .models import City, Route
 def dijkstra(start_city):
     distances = {start_city:0}
     previous_cities = {start_city:None}
-    # completar
+    cola_prioridad = [(0, start_city)]
+    
+    while cola_prioridad:
+        distancia_actual, ciudad_actual = heapq.heappop(cola_prioridad)
+
+        if distancia_actual > distances[ciudad_actual]:
+            continue
+
+        for vecino, peso in ciudad_actual.obtener_vecinos():
+            distancia = distancia_actual + peso
+
+            if distancia < distances.get(vecino, float('inf')):
+                distances[vecino] = distancia
+                previous_cities[vecino] = ciudad_actual
+                heapq.heappush(cola_prioridad, (distancia, vecino))
+
     return distances, previous_cities
 
 def get_shortest_path(start_city, end_city):

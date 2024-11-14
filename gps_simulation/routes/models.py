@@ -5,6 +5,13 @@ class City(models.Model):
     info_y_bodegas = models.TextField(null=True, blank=True)
     imagen = models.ImageField(upload_to='static/image', null=True)
 
+    def obtener_vecinos(self):
+        # Busca las rutas donde esta ciudad es la ciudad de inicio
+        rutas_salientes = Route.objects.filter(start_city=self)
+        # Genera una lista de tuplas (vecino, distancia)
+        vecinos = [(ruta.end_city, ruta.distance) for ruta in rutas_salientes]
+        return vecinos
+
     def __str__(self):
         return self.name
 
