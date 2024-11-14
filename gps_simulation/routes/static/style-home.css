@@ -1,10 +1,6 @@
 /* static/styles-home.css */
 body {
     font-family: Arial, sans-serif;
-    background-image: url("{% static'images/LaRutaDelVino.jpg'%}");
-    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita la imagen */
     background-color: #6a95a8;
     margin: 0;
     padding: 0;

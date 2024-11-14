@@ -13,8 +13,14 @@ Creamos el entorno virtual y todos los requeriments. En el cual tuvimos varios r
 Creamos el usuario y la clave de Django. Esto fue facil, ya que estaba bien claro en las instrucciones.
 Tambien logramos comentar parte del código del archivo utils.py el cual está por ahora en un colab https://colab.research.google.com/drive/1aIyEDSBqIMXfrhr4pRfrHlyREn1n2uhQ
 
-##Que no anda:
+##Segunda entrega...
+###Que no anda:
 Todavía no hemos avanzado en la lectura de la consigna en cuanto a lo que viene del proyecto, por lo tanto no tenemos del todo claro qué sigue.
 
-##Planificación:
+###Planificación:
 Nuestra planificación a partir de ahora, es dedicarle la mayor parte del tiempo posible a este proyecto, gracias a que logramos terminar con otros objetivos.
+
+##Tercera entrega:
+En esta tercera entrega logramos cumplir con el obgetivo planteado por el profesor.
+Quedan cosas por mejorar, por ejemplo mejores estilos y funcionalidades. Tambien nos costó mucho entender los archivos estáticos y la ubicación de las carpetas de imágenes.
+Pudimos implementar dijkstra pero con algunas dudas y dificultades. Entendemos que tiene una complejidad O(log n) ya que usa una cola de prioridad.
