@@ -20,14 +20,18 @@ ul.list-group {
 
 ul.list-group li {
     margin: 10px;
-    background-color: #fff;
+    background-color: rgba(240, 240, 240, 0.3);
     padding: 12px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    height: auto;
+    align-self: center;
 }
 
 ul.list-group li a {
-    color: #007bff;
+    color: #000000;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -38,4 +42,21 @@ ul.list-group li a:hover {
 ul.list-group li.no-ciudades {
     background-color: #f8d7da;
     color: #721c24;
+}
+
+.contenedorCI{
+    background-image: url('./img/LaRutaDelVino.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.containerRU{
+    background-image: url('./img/MendozaRuta.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mb-3{
+    font-weight: 600;
 }

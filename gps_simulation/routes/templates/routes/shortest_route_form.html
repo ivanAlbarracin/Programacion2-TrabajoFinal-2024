@@ -1,9 +1,13 @@
 {% extends 'routes/base.html' %}
+{% load static %}
 
 {% block title %}Shortest Route{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
+
+<link rel="stylesheet" href="{% static './style-home.css' %}">
+
+    <div class="containerRU">
     <h1 class="text-center">Encontrar la ruta más corta</h1>
     
     <form method="POST">
@@ -51,6 +55,5 @@
             <p>Total distance: {{ distance }} km</p>
         </div>
     {% endif %}
-</div>
+    </div>
 {% endblock %}
-d
